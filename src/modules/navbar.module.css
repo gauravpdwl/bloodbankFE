@@ -1,0 +1,56 @@
+
+.outerOfNavbar{
+    display: flex;
+    /* margin: 10px; */
+    background-color:white;
+    border-radius: 13px;
+}
+
+.navbar{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    /* margin: 5px; */
+    padding: 2px;
+    background-color:rgb(188, 212, 185);
+    border-radius: 10px;
+}
+
+.childnavbar{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+}
+
+.link{
+    color: #000; /* Remove default blue color */
+    text-decoration: none; /* Remove default underline */
+    outline: none; /* Remove default outline on focus */
+    font-size: 1rem;
+    margin: 10px;
+    padding: 1px;
+    font-weight: 600;
+    opacity: 0.9;
+    color: rgb(33, 35, 37);
+}
+
+.titlelink{
+    font-size: 1.5rem;
+    border-bottom: 4px solid black;
+    font-weight: 700;
+}
+
+.link:active{
+    color: rgb(188, 212, 185);
+}
+
+.link:hover{
+    border-bottom: 4px solid black;
+    /* margin: 9px; */
+}
+
+.titlelink:hover{
+    font-size: 1.5rem;
+    border-bottom: 4px solid black;
+}
