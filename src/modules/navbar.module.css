@@ -2,8 +2,10 @@
 .outerOfNavbar{
     display: flex;
     /* margin: 10px; */
-    background-color:white;
+    /* background-color:rgb(188, 212, 185); */
     border-radius: 13px;
+    font-size: 1.125rem;
+    letter-spacing: 0;
 }
 
 .navbar{
@@ -11,46 +13,54 @@
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-    /* margin: 5px; */
-    padding: 2px;
-    background-color:rgb(188, 212, 185);
-    border-radius: 10px;
+    align-items: center;
+    margin: 10px;
+}
+
+.titlenavbar{
+    border-radius: 15px;
+    padding: 3px;
+    background-color: aquamarine;
 }
 
 .childnavbar{
     display: flex;
     flex-direction: row;
-    align-items:flex-end;
+    justify-content: space-between;
+    align-items: center;
+
 }
 
 .link{
     color: #000; /* Remove default blue color */
     text-decoration: none; /* Remove default underline */
     outline: none; /* Remove default outline on focus */
-    font-size: 1rem;
-    margin: 10px;
-    padding: 1px;
-    font-weight: 600;
-    opacity: 0.9;
-    color: rgb(33, 35, 37);
+}
+
+.para{
+    font-size: 1.1rem;
+    color: rgb(20, 20, 20);
+    font-weight: 400;
+    margin: 5px;
 }
 
 .titlelink{
-    font-size: 1.5rem;
-    border-bottom: 4px solid black;
-    font-weight: 700;
+    font-size: 1.3rem;
+    color: rgb(20, 20, 20);
+    border-bottom: 2px solid rgb(20, 20, 20);
+    font-weight: 400;
 }
 
-.link:active{
-    color: rgb(188, 212, 185);
+.para:active{
+    color: rgb(224, 248, 255);
 }
 
-.link:hover{
-    border-bottom: 4px solid black;
+.titlelink:active{
+    color: rgb(20, 20, 20);
+}
+
+.para:hover{
+    border-bottom: 2px solid rgb(20, 20, 20);
     /* margin: 9px; */
 }
 
-.titlelink:hover{
-    font-size: 1.5rem;
-    border-bottom: 4px solid black;
-}

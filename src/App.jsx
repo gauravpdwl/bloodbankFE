@@ -5,6 +5,8 @@ import AddDonor from './components/adddonor.jsx';
 
 import store from './redux/store.js';
 import { Provider } from 'react-redux';
+import Donors from './components/donors.jsx';
+import About from './components/about.jsx';
 
 function App() {
 
@@ -12,7 +14,8 @@ function App() {
     {path:"/", element:<Navbar/>, children:[
       {index:true, element:<Home/>},
       {path:"adddonor", element:<AddDonor/>},
-      {path:"about", element:<AddDonor/>}
+      {path:"about", element:<About/>},
+      {path:"donors", element:<Donors/>}
     ]}
   ]);
 

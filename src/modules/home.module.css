@@ -1,9 +1,10 @@
 .topdiv{
-    height: calc(100vh - 71px);
+    height: calc(100vh - 84px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
 .imagecontainer{
@@ -11,9 +12,8 @@
 }
 
 .imagestyle{
-    /* width: 40vw; */
-    width:80%; /* Adjust the max-width as needed */
-    height: auto;
+    width:70%;
+    height: auto; 
 }
 
 .para{

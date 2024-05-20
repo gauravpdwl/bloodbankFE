@@ -3,9 +3,8 @@ body{
     padding: 0;
     box-sizing: border-box;
     text-align: center;
-    font-size: 16px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
     font-style: normal;
-    background-color: rgb(188, 212, 185);
+    background-color: rgb(224, 248, 255);
 }
