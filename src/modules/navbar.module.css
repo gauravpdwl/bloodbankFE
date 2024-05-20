@@ -20,7 +20,8 @@
 .titlenavbar{
     border-radius: 15px;
     padding: 3px;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
+    background-color: #1ad1ce;
 }
 
 .childnavbar{
@@ -46,13 +47,14 @@
 
 .titlelink{
     font-size: 1.3rem;
-    color: rgb(20, 20, 20);
+    color:black;
     border-bottom: 2px solid rgb(20, 20, 20);
     font-weight: 400;
 }
 
 .para:active{
-    color: rgb(224, 248, 255);
+    /* color: rgb(224, 248, 255); */
+    color: rgb(176, 203, 254);
 }
 
 .titlelink:active{
