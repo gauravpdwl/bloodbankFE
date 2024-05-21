@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import navbarStyle from '../modules/navbar.module.css';
+import navbarStyle from '../assets/modules/navbar.module.css';
 
 function Navbar(){
     return (

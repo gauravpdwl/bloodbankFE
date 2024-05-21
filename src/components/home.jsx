@@ -1,5 +1,5 @@
 import myImage from '/blood-donation.png';
-import homestyle from '../modules/home.module.css';
+import homestyle from '../assets/modules/home.module.css';
 
 function Home(){
     return (
