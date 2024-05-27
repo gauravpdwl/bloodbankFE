@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import adStyle from '../assets/modules/adddonor.module.css';
-
-// import { useSelector } from "react-redux";
+import { actions } from '../redux/reducers/donorreducer';
+import { useDispatch } from "react-redux";
 
 
 function AddDonor(){
@@ -14,7 +14,7 @@ function AddDonor(){
     let [address, setAddress]= useState("");
     let [available, setAvailable]= useState(true);
 
-
+    const dispatch=useDispatch();
     // const donors=useSelector((state)=>state.donorReducer.donors);
     // console.log("donors list");
     // console.log(donors);
@@ -41,15 +41,8 @@ function AddDonor(){
     function adddonor(e){
         e.preventDefault();
 
-        if(name.length===0){
-            return;
-        }
-
-        if(email.length===0){
-            return;
-        }
-
-        if(contact.length===0){
+        if(name.length===0 || email.length===0 || contact.length===0 || bloodgroup.length===0 
+            || age.length===0 || address.length===0){
             return;
         }
 
@@ -63,7 +56,9 @@ function AddDonor(){
             return;
         }
 
-        console.log(name, email, contact, bloodgroup, age, address, available);
+        dispatch(actions.add({name, email, contact, bloodgroup, age, address, available}));
+
+        // console.log(name, email, contact, bloodgroup, age, address, available);
 
         setName("");
         setEmail("");
@@ -78,7 +73,7 @@ function AddDonor(){
         <>
             <div className={adStyle.maindiv}>
             <div className={adStyle.titlediv}>
-                <p>Please fill donor details</p>
+                <p>Please Fill Donor Details</p>
             </div>
 
             <form>
@@ -155,7 +150,7 @@ function AddDonor(){
                         <input className={adStyle.inputelement} 
                                 type="text" 
                                 name="address" 
-                                placeholder="Address" 
+                                placeholder="City" 
                                 value={address}
                                 onChange={(e)=>setAddress(e.target.value)}
                                 required
