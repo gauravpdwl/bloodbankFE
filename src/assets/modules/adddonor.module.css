@@ -54,6 +54,8 @@
     border-radius: 5px;
     font-size: 16px;
     text-align: left;
+    background-color: rgb(26, 43, 57);
+    color: whitesmoke;
 }
 
 .inputelement:focus{

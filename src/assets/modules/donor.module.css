@@ -7,17 +7,19 @@
     flex-direction: row;
     padding:  0.6rem;
     margin: 1rem;
-    background-color: aliceblue;
+    background-color: rgb(26, 43, 57);
+    color: whitesmoke;
 }
 
 .partone {
     width: 40%;
-    background-color: rgb(245, 208, 193);
+    background-color: rgb(7, 152, 135);
     margin: 0.5rem;
     border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 .parttwo{
@@ -40,7 +42,7 @@
 .availableyes{
     width: 5%;
     border-radius: 2rem;
-    background-color: rgb(16, 111, 16);
+    background-color: rgb(46, 165, 46);
     margin: 4px;
     padding: 5px;
 }

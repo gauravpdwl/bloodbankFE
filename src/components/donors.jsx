@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 export default function Donors(){
 
     const donors=useSelector(state=>state.donorReducer.donors);
-    console.log(donors);
+    // console.log(donors);
 
     return (
         <>
